@@ -52,3 +52,4 @@ uvicorn==0.54.0
 watchdog==6.0.0
 websockets==17.3
 xgboost==3.4.1
+reportlab==4.2.0

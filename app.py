@@ -11,6 +11,15 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from PIL import Image
 from gradcam_utils import load_brain_model, generate_superimposed_mri
 
+import os
+import urllib.request
+# Ensure brain model weights exist; download from GitHub Release if missing
+MODEL_PATH = "brain_mri_model.pth"
+MODEL_URL = "https://github.com/shahnawaznabil11/Early-Cancer-Risk-Assessment/releases/download/v1.0.0/brain_mri_model.pth"
+
+if not os.path.exists(MODEL_PATH):
+    with st.spinner("Downloading brain MRI model weights (one-time setup)..."):
+        urllib.request.urlretrieve(MODEL_URL, MODEL_PATH)
 # =====================================================================
 # 1. Page Configuration & Navigation Tabs
 # =====================================================================

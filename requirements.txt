@@ -53,3 +53,6 @@ watchdog==6.0.0
 websockets==17.3
 xgboost==3.4.1
 reportlab==4.2.0
+torch
+torchvision
+opencv-python

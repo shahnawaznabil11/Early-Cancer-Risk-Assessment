@@ -55,4 +55,4 @@ xgboost==3.4.1
 reportlab==4.2.0
 torch
 torchvision
-opencv-python
+opencv-python-headless
